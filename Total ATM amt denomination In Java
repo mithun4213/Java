@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class TotalATMAmt
+{
+public static void main(String[] args)
+{
+int a,na,b,nb,c,nc,d,nd;
+int sum=0;
+Scanner input=new Scanner(System.in);
+System.out.println("Enter the 1st Denomination: ");
+a=input.nextInt();
+System.out.println("Enter the 1st Denomination no of notes: ");
+na=input.nextInt();
+System.out.println("Enter the 2nd Denomination: ");
+b=input.nextInt();
+System.out.println("Enter the 2nd Denomination no of notes: ");
+nb=input.nextInt();
+System.out.println("Enter the 3rd Denomination: ");
+c=input.nextInt();
+System.out.println("Enter the 3rd Denomination no of notes: ");
+nc=input.nextInt();
+System.out.println("Enter the 4th Denomination: ");
+d=input.nextInt();
+System.out.println("Enter the 4th Denomination no of notes: ");
+nd=input.nextInt();
+sum=(a*na)+(b*nb)+(c*nc)+(d*nd);
+System.out.println("Total Available Balance In ATM: "+sum);
+}
+}
