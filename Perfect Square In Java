@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class PerfectSquare {
+   public static boolean isPerfectSquare(double number) {
+      double root = Math.sqrt(number);
+      return (root - Math.floor(root) == 0);
+   }
+   public static void main(String[] args) {
+      int minRange = 0;
+      int maxRange = 0;
+      boolean count = false;
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter min value of range::");
+      minRange = scan.nextInt();
+      System.out.print("Enter max value of range::");
+      maxRange = scan.nextInt();
+
+      System.out.println("The perfect square"
+             + " between "+ minRange +" to "
+            + maxRange + " are: ");
+      for(int i=minRange; i<=maxRange; i++) {
+    	  if(isPerfectSquare(i)) {
+    	      System.out.print(i+" ");
+                  count = true;
+    	  }
+      }
+      if(!count)
+         System.out.println("No perfect "
+            + "square number found in this range");
+      scan.close();
+   }
+}
